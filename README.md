@@ -10,7 +10,8 @@ ChatGPT Prompt Engineering for Developers [DeepLearning.AI course link](https://
         - [Tactic 2](#tactic-2) - Ask for a structured output
         - [Tactic 3](#tactic-3) - Ask the model to check whether conditions are satisfied
         - [Tactic 4](#tactic-4) - "Few-shot" prompting
-
+    - [Principle 2](#principle-2) Give the model time to “think”
+        - [Tactic 1](#tactic-2-1) - Use delimiters to clearly indicate di
 
 ## Introduction
 
@@ -170,4 +171,27 @@ print(response)
 
 # response:
 <grandparent>: Resilience is like a tree that bends with the wind but never breaks. It is the ability to bounce back from adversity and keep moving forward, even when things get tough. Just like a tree that grows stronger with each storm it weathers, resilience is a quality that can be developed and strengthened over time.
+```
+
+### Principle 2
+`Give the model time to “think”`
+
+#### Tactic 2-1
+`Specify the steps required to complete a task`
+
+```
+prompt_1 = f"""
+Perform the following actions: 
+1 - Summarize the following text delimited by triple \
+backticks with 1 sentence.
+2 - Translate the summary into Chinese.
+3 - List each name in the Chinese summary.
+4 - Output a json object that contains the following \
+keys: chinese_summary, num_names.
+
+Separate your answers with line breaks.
+
+Text:
+```{text}```
+"""
 ```
