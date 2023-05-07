@@ -10,8 +10,8 @@ ChatGPT Prompt Engineering for Developers [DeepLearning.AI course link](https://
         - [Tactic 2](#tactic-2) - Ask for a structured output
         - [Tactic 3](#tactic-3) - Ask the model to check whether conditions are satisfied
         - [Tactic 4](#tactic-4) - "Few-shot" prompting
-    - [Principle 2](#principle-2) Give the model time to “think”
-        - [Tactic 1](#tactic-2-1) - Use delimiters to clearly indicate di
+     - [Principle 2](#principle-2) Give the model time to “think”
+        - [Tactic 1](#tactic-2-1) - Specify the steps required to complete a task
 
 ## Introduction
 
